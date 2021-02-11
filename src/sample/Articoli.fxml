@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="469.0" prefWidth="401.0" style="-fx-background-color: white; -fx-background-radius: 18 18 18 18; -fx-border-radius: 18 18 18 18; -fx-effect: dropshadow(three-pass-box, derive( grey, -20%), 10 ,0, 4, 4);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageview" fitHeight="259.0" fitWidth="277.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Line endX="285.0" layoutX="115.0" layoutY="279.0" startX="-115.0" />
+      <AnchorPane layoutY="264.0" prefHeight="159.0" prefWidth="401.0">
+         <children>
+            <Text fx:id="nomeart" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="400.99999211728573">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="153.0" onAction="#addtocart" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #6441a5;" text="Aggiungi al carello" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="prezzoart" layoutX="84.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="233.13671875">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="104.0" onAction="#dettagli" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #6441a5;" text="Dettagli" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
